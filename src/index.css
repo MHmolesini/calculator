@@ -1,6 +1,17 @@
 :root {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #17171C;
+
+  --fondo: #17171C;
+  --fondo-calculadora: #F1F2F3;
+  --texto: #000000;
+  --primario: #485EFC;
+  --secundario: #C8C9CF;
+  --terciario: #FFFFFF;
+
+  --box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  
+  background-color: var(--fondo);
+  color: var(--texto);
 }
 
 * {
@@ -14,12 +25,3 @@
   place-items: center;
 }
 
-main {
-  background-color: #F1F2F3;
-  aspect-ratio: 9/16;
-  border-radius: 40px;
-  height: 90%;
-  min-height: 600px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
