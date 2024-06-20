@@ -1,6 +1,6 @@
 button {
     border: none;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     background-color: var(--terciario);
     font-size: 3rem;
     aspect-ratio: 1/1;
