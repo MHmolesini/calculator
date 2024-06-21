@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Boton from "./Boton";
 import "./calculadora.css";
+import Switch from "./Switch";
 
 const Calculadora = () => {
   const [data, setData] = useState({ operacion: "", resultado: "" });
@@ -17,7 +18,7 @@ const Calculadora = () => {
     if (data.operacion.length >= 10) return;
     if (valor === "+/-" && data.operacion === "") return;
     if (valor === '%' && data.operacion.includes('%')) return;
-    
+
     if (data.operacion.includes("Error")) {
       setData({
         ...data,
@@ -78,6 +79,7 @@ const Calculadora = () => {
 
   return (
     <main>
+      <Switch/>
       <span className="resultado">{data.resultado}</span>
       <span className="resultado">{data.operacion}</span>
 

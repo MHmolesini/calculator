@@ -9,9 +9,12 @@
   --terciario: #FFFFFF;
 
   --box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
-  
+}
+
+body {
   background-color: var(--fondo);
   color: var(--texto);
+  transition: 1000ms;
 }
 
 * {
@@ -25,3 +28,11 @@
   place-items: center;
 }
 
+[data-theme='oscuro'] {
+  --fondo: #F1F2F3;
+  --fondo-calculadora: #17171C;
+  --texto: #FFFFFF;
+  --primario: #485EFC;
+  --secundario: #4E505F;
+  --terciario: #2E2F38;
+}
